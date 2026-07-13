@@ -1,44 +1,55 @@
-# 📚 My Tracker
+# 📚 LearnFlow
 
-My Tracker is a web application that helps organize learning resources in one place. Instead of keeping YouTube links, documentation, articles, and coding problems scattered across different platforms, users can group them into collections for easy access.
+LearnFlow is a full-stack web application that helps learners organize all their learning resources in one place. Instead of keeping YouTube videos, documentation, articles, PDFs, and coding problems scattered across different platforms, users can group them into collections, track their understanding, and receive reminders for revision.
 
-The project is currently under active development, with features being added incrementally.
+The project is designed to make self-learning more organized and consistent.
 
 ---
 
-## ✨ Current Features
+## ✨ Features
 
-- 📂 Create collections
-- ➕ Add learning resources to collections
-- 🗑️ Delete resources
-- 🔗 Store resource URLs
-- 📱 Responsive user interface
-- ⭐ Confidence rating (1–3 stars)
-- 📅 Automatic revision scheduler
-- 📊 Dashboard with today's revisions
+* 🔐 Secure user authentication (Register & Login)
+* 📂 Create and manage learning collections
+* ➕ Add learning resources to collections
+* ✏️ Edit and 🗑️ delete resources
+* 🔗 Store resource URLs
+* ⭐ Rate your confidence for each resource (1–3 stars)
+* 📅 Automatic revision reminders based on confidence
+* 📊 Dashboard showing resources due for revision
+* 📱 Responsive and clean user interface
+
 ---
 
-## 🚧 Upcoming Features
+## 🚧 Planned Features
 
-
-- 🔍 Search and filtering
-- 🔐 User authentication
+* 🔍 Search and filtering
+* 📄 PDF uploads
+* 🖼️ Image uploads
+* 📈 Learning statistics and progress tracking
+* 🤖 AI-powered summaries and flashcards
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React
-- TypeScript
-- CSS
+
+* React
+* TypeScript
+* CSS
 
 ### Backend
-- FastAPI
-- Python
+
+* FastAPI
+* Python
 
 ### Database
-- SQLite
+
+* SQLite
+
+### Authentication
+
+* JWT (JSON Web Tokens)
 
 ---
 
@@ -73,20 +84,20 @@ uvicorn main:app --reload
 
 ## 📌 Roadmap
 
-- [x] Project setup
-- [x] Collection management
-- [x] Resource management
-- [x] Confidence rating system
-- [x] Revision scheduler
-- [x] Dashboard
-- [ ] Search 
-- [ ] User authentication
+* [x] Project setup
+* [x] User authentication
+* [x] Collection management
+* [x] Resource management
+* [x] Confidence rating system
+* [x] Automatic revision reminders
+* [x] Dashboard
+
 
 ---
 
 ## 🎯 Vision
 
-The goal of My Tracker is to simplify learning by providing a centralized platform to organize resources and help users revise them systematically.
+LearnFlow aims to become a personal learning companion that helps users organize resources, monitor their understanding, and revise efficiently—all from one place.
 
 ---
 
