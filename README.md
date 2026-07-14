@@ -1,108 +1,233 @@
 # 📚 LearnFlow
 
-LearnFlow is a full-stack web application that helps learners organize all their learning resources in one place. Instead of keeping YouTube videos, documentation, articles, PDFs, and coding problems scattered across different platforms, users can group them into collections, track their understanding, and receive reminders for revision.
+LearnFlow is a full-stack web application that helps learners organize all their learning resources in one place. Instead of keeping YouTube videos, documentation, articles, PDFs, and coding problems scattered across different platforms, users can group them into collections, track their understanding, and receive personalized revision reminders based on their confidence level.
 
-The project is designed to make self-learning more organized and consistent.
+The project is designed to make self-learning more organized, consistent, and efficient.
+
+---
+
+## 🌐 Live Demo
+
+**Frontend:** https://learn-flow-xi-nine.vercel.app
+
+**Backend API (Swagger):** https://learnflow-bos1.onrender.com/docs
+
+> **Note:** The backend is hosted on Render's free tier. The first request may take 30–60 seconds while the server wakes up.
+
+---
+
+## 📸 Screenshots
+
+### Login
+
+![Login](images/login.png)
+
+### Register
+
+![Register](images/register.png)
+
+### Dashboard
+
+![Dashboard](images/dashboard.png)
+
+### Collections
+
+![Collections](images/collections.png)
+
+### Resources
+
+![Resources](images/resources.png)
 
 ---
 
 ## ✨ Features
 
-* 🔐 Secure user authentication (Register & Login)
-* 📂 Create and manage learning collections
-* ➕ Add learning resources to collections
-* ✏️ Edit and 🗑️ delete resources
-* 🔗 Store resource URLs
-* ⭐ Rate your confidence for each resource (1–3 stars)
-* 📅 Automatic revision reminders based on confidence
-* 📊 Dashboard showing resources due for revision
-* 📱 Responsive and clean user interface
+- 🔐 Secure user authentication (JWT Authentication)
+- 📂 Create and manage learning collections
+- ➕ Add learning resources to collections
+- ✏️ Edit existing resources
+- 🗑️ Delete resources
+- 🔗 Save useful learning links
+- ⭐ Rate confidence for every resource (1–3)
+- 📅 Automatic revision reminders based on confidence level
+- 📊 Dashboard showing resources due for revision
+- 👤 User-specific data isolation
+- 📱 Responsive and clean user interface
 
 ---
 
 ## 🚧 Planned Features
 
-* 🔍 Search and filtering
-* 📄 PDF uploads
-* 🖼️ Image uploads
-* 📈 Learning statistics and progress tracking
-* 🤖 AI-powered summaries and flashcards
+- 🔍 Search and filtering
+- 📄 PDF uploads
+- 🖼️ Image uploads
+- 📈 Learning analytics and progress charts
+- 🤖 AI-generated summaries
+- 📝 Flashcard generation
+- 📅 Calendar-based revision planner
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠 Tech Stack
 
-### Frontend
+## Frontend
 
-* React
-* TypeScript
-* CSS
+- React
+- TypeScript
+- Vite
+- CSS
 
-### Backend
+## Backend
 
-* FastAPI
-* Python
+- FastAPI
+- Python
+- SQLAlchemy
 
-### Database
+## Database
 
-* SQLite
+- SQLite
 
-### Authentication
+## Authentication
 
-* JWT (JSON Web Tokens)
+- JWT (JSON Web Tokens)
+
+## Deployment
+
+- Frontend: Vercel
+- Backend: Render
 
 ---
 
-## 🚀 Getting Started
+# 🏗 Architecture
 
-### Clone the repository
-
-```bash
-git clone https://github.com/asairamyasri/my-tracker.git
-cd my-tracker
+```
+React + TypeScript
+        │
+        ▼
+FastAPI REST API
+        │
+        ▼
+SQLAlchemy ORM
+        │
+        ▼
+SQLite Database
 ```
 
-### Frontend
+---
+
+# 🚀 Getting Started
+
+## Clone the Repository
 
 ```bash
-cd client
-npm install
-npm run dev
+git clone https://github.com/asairamyasri/LearnFlow.git
+cd LearnFlow
 ```
 
-### Backend
+---
+
+## Backend Setup
 
 ```bash
 cd backend
+
 python -m venv venv
-source venv/bin/activate    # Linux/macOS
+
+# Linux/macOS
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+
 pip install -r requirements.txt
-uvicorn main:app --reload
+
+uvicorn app.main:app --reload
 ```
 
 ---
 
-## 📌 Roadmap
+## Frontend Setup
 
-* [x] Project setup
-* [x] User authentication
-* [x] Collection management
-* [x] Resource management
-* [x] Confidence rating system
-* [x] Automatic revision reminders
-* [x] Dashboard
+```bash
+cd client
+
+npm install
+
+npm run dev
+```
+
+The frontend will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📂 Project Structure
+
+```
+LearnFlow
+│
+├── backend
+│   ├── app
+│   ├── requirements.txt
+│   └── ...
+│
+├── client
+│   ├── src
+│   ├── public
+│   └── ...
+│
+├── images
+│
+└── README.md
+```
+
+---
+
+# 📌 Roadmap
+
+- ✅ User Authentication
+- ✅ JWT Authorization
+- ✅ Collections Management
+- ✅ Resource CRUD Operations
+- ✅ Confidence Rating System
+- ✅ Automatic Revision Scheduler
+- ✅ Personalized Dashboard
+- ✅ Responsive UI
 
 
 ---
 
-## 🎯 Vision
+# 💡 Motivation
 
-LearnFlow aims to become a personal learning companion that helps users organize resources, monitor their understanding, and revise efficiently—all from one place.
+Many learners save resources across multiple platforms—YouTube, blogs, documentation, coding websites, and PDFs—but often forget where they saved them or when to revisit them.
+
+LearnFlow addresses this by providing a centralized platform where users can organize resources, track their understanding, and receive simple spaced-review reminders to reinforce learning.
 
 ---
 
-## 👩‍💻 Author
+# 🎯 Future Scope
+
+- PostgreSQL support
+- Docker deployment
+- Cloud file storage
+- Email reminders
+- AI-generated flashcards
+- AI learning recommendations
+- Mobile application
+
+---
+
+# 👩‍💻 Author
 
 **Annapureddy Sai Ramyasri**
 
 GitHub: https://github.com/asairamyasri
+
+---
+
+## ⭐ Support
+
+If you found this project interesting, consider giving it a ⭐ on GitHub!
